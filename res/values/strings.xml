@@ -4,5 +4,6 @@
     <string name="app_name">ClientElderAlert</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="today">Today</string>
+	<string name="yesterday">Yesterday</string>
 </resources>

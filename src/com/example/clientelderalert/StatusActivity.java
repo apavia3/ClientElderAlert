@@ -1,27 +1,66 @@
 package com.example.clientelderalert;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
+import java.util.Arrays;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import com.androidplot.xy.SimpleXYSeries;
+import android.view.View;
+import android.widget.ImageView;
+
 import com.androidplot.series.XYSeries;
-import com.androidplot.xy.*;
-import java.util.Arrays;
+import com.androidplot.xy.BoundaryMode;
+import com.androidplot.xy.LineAndPointFormatter;
+import com.androidplot.xy.SimpleXYSeries;
+import com.androidplot.xy.XYPlot;
 /**
 * The simplest possible example of using AndroidPlot to plot some data.
 */
 public class StatusActivity extends Activity
 {
     private XYPlot mySimpleXYPlot;
+    private ImageView settingsImage;
+    private ImageView contactsImage;
+    private ImageView historyImage;
+    
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+       
         setContentView(R.layout.activity_status);
+        
+        settingsImage = (ImageView) findViewById(R.id.settings);
+        settingsImage.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(StatusActivity.this, SettingsActivity.class);
+				startActivity(i);
+			}
+		});
+        
+        contactsImage = (ImageView) findViewById(R.id.contacts);
+        contactsImage.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(StatusActivity.this, ContactsActivity.class);
+				startActivity(i);
+			}
+		});
+        
+        historyImage = (ImageView) findViewById(R.id.history);
+        historyImage.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(StatusActivity.this, HistoryActivity.class);
+				startActivity(i);
+			}
+		});
+        
         mySimpleXYPlot = (XYPlot) findViewById(R.id.mySimpleXYPlot);
         // Create a couple arrays of y-values to plot:
         Number[] series1Numbers = {50,50,50,50,50,50,50,50,65,60,60,60,65,65,60,65,55};
