@@ -29,6 +29,12 @@
     		android:name="com.example.clientelderalert.ContactsActivity"></activity>
 		<activity 
     		android:name="com.example.clientelderalert.HistoryActivity"></activity>
+		<activity 
+    		android:name="com.example.clientelderalert.TodayActivity"></activity>
+		<activity 
+    		android:name="com.example.clientelderalert.YesterdayActivity"></activity>
+		<activity 
+    		android:name="com.example.clientelderalert.LastweekActivity"></activity>
     </application>
 
 </manifest>

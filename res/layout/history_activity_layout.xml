@@ -4,35 +4,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cardiac History"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <RadioGroup
         android:id="@+id/rdgrp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
         <RadioButton
-            android:id="@+id/radioButton1"
+            android:id="@+id/rbToday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/today" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbYesterday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/yesterday" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbLastWeek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Last week" />
     </RadioGroup>
-
 </LinearLayout>
