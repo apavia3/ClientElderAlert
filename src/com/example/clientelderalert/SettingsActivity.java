@@ -27,7 +27,7 @@ public class SettingsActivity extends Activity {
 		setContentView(R.layout.settings_activity_layout);
 		
 		ListView listView = (ListView) findViewById(R.id.settingsList);
-		String[] values = new String[] { "Calibration", "Account Settings", "Display Settings"};
+		String[] values = new String[] { "Account Settings","Display Settings"};
 	
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				  android.R.layout.simple_list_item_1, android.R.id.text1, values);

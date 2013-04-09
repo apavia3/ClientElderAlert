@@ -1,9 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
+    
+    <item android:id="@+id/action_settings" android:orderInCategory="100" android:showAsAction="ifRoom" android:title="@string/action_settings" android:icon="@drawable/ic_action_settings_dark" /><item android:id="@+id/action_relatives" android:title="Relatives" android:icon="@drawable/ic_action_social_person_dark" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/action_history" android:icon="@drawable/ic_action_collection_dark" android:title="History" android:showAsAction="ifRoom"></item>
 
 </menu>

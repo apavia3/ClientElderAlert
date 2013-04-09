@@ -16,7 +16,7 @@
         <RelativeLayout
             android:id="@+id/relativeLayout1"
             android:layout_width="fill_parent"
-            android:layout_height="600dp"
+            android:layout_height="500dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:textColor="#000000" >
@@ -35,9 +35,9 @@
                 android:layout_height="50dp"
                 android:layout_marginRight="5dp"
                 android:layout_toRightOf="@+id/heartMonitorStatusStatic"
-                android:text="Not connected"
+                android:text="Connected"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#FFFF0000" />
+                android:textColor="#66CD00" />
 
             <com.androidplot.xy.XYPlot
                 android:id="@+id/mySimpleXYPlot"
@@ -48,42 +48,6 @@
                 android:layout_marginRight="10px"
                 android:layout_marginTop="10px"
                 title="A Simple XYPlot Example" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/relativeLayout1"
-            android:gravity="bottom" >
-
-            <ImageView
-                android:id="@+id/settings"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:background="#FDFDFDFD"
-                android:src="@drawable/ic_settings_big_light" 
-                android:clickable="true" />
-
-            <ImageView
-                android:id="@+id/contacts"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:background="#FDFDFDFD"
-                android:src="@drawable/ic_contacts_big_light" />
-
-            <ImageView
-                android:id="@+id/history"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:background="#FDFDFDFD"
-                android:src="@drawable/ic_collections_big_light" />
         </RelativeLayout>
     </RelativeLayout>
 
